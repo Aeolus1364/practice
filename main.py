@@ -16,6 +16,10 @@ class Main:
 
     def main_loop(self):
         while self.running:
+            
+            for event in pygame.event.get():
+                if event.type == pygame.QUIT:
+                    self.running = False
 
             self.surf.fill((255, 255, 255))
 
@@ -25,6 +29,8 @@ class Main:
             pygame.display.update()
 
             self.clock.tick(self.fps)
+            
+        pygame.quit()
 
 
 main = Main()
