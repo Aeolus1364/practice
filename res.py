@@ -1,3 +1,4 @@
 import pygame
 
-planet2 = pygame.image.load("planet2.png")
+player = pygame.image.load("player.png")
+bee = pygame.image.load("b.png")
